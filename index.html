@@ -1,0 +1,91 @@
+
+<!-- This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/. -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>home</title>
+		<link rel="stylesheet" type="text/css" href="style.css"> 
+		<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="FeedEk.js"></script>
+	</head>
+	<body>
+			<div class="container">
+			<form method="get" action="http://www.google.com/search" target="_blank">
+          		<input type="text" name="q" placeholder="Something on your mind.."
+                    onhover="this.placeholder='Something on your mind..'"
+                    onfocus="this.placeholder = ''" onblur="this.placeholder='Something on your mind..'" class="search"></form>
+			<div class="notlast_container">
+				<h2>university</h2>
+				<ul>
+					<li><a href="https://www.bibliothek.kit.edu/cms/index.php">library</a></li>
+					<li><a href="https://idp.scc.kit.edu/idp/profile/SAML2/Redirect/SSO;jsessionid=2AADAD68A33FFB011B50D2C38D91B6C8.scc-idp-02?execution=e1s1">ilias</a></li>
+					<li><a href="https://campus.studium.kit.edu/">campus</a></li>
+					<li><a href="http://gen.lib.rus.ec/">libgen</a></li>
+				</ul>
+			</div>
+			<div class="notlast_container">
+				<h2>general</h2>
+				<ul>
+					<li><a href="https://mail.google.com">gmail</a></li>
+					<li><a href="https://drive.google.com/drive/?ltmpl=drive&usp=gtd&utm_campaign=web&utm_content=gotodrive&utm_medium=button&utm_source=de#">drive</a></li>
+					<li><br><br\></li>
+					<li><br><br\></li>
+				</ul>
+
+			</div>
+            
+			<div class="notlast_container">
+				<!--<div class="test">-->
+                <h2>entertainment</h2>
+				<ul>
+					<li><a href="https://www.youtube.com">youtube</a></li>
+                    <li><a href="https://www.twitch.tv/directory/following">twitch</a></li>
+					<li><a href="http://www.kissanime.to">kissanime</a></li>
+                    <li><a href="https://bs.to/serie/Mr-Robot/2">bs.to</a></li>
+                </ul>
+			</div>
+			<div id="boards" class="notlast_container">
+				<h2>boards</h2>
+				<ul>
+                    <li>
+                        <a href="#">reddit</a>
+                        <ul>
+				            <li><a href="https://www.reddit.com">home</a></li>
+				            <li><a href="https://reddit.com/r/theredpill">trp</a></li>
+                            <li><a href="https://reddit.com/r/unixporn">unixporn</a></li>
+                            <li><a href="https://reddit.com/r/mrrobot">mrrobot</a></li>
+                        </ul>
+                    </li>
+					<!--<li><br><br\></li>-->
+                    <li>
+                        <a href="#">4chan</a>
+                        <ul>
+                        <li><a href="http://boards.4chan.org/g/catalog">/g/</a></li>
+                        <li><a href="http://boards.4chan.org/wg/catalog">/wg/</a></li>    
+                        <li><a href="http://boards.4chan.org/sci/catalog">/sci/</a></li>
+                        </ul>
+                    </li>
+				</ul>
+			</div>
+                
+            <div id="last_container">
+                <div id="rss">
+				    <h2>news</h2>
+				    <div id="divRss"></div>
+					   <script type="text/javascript">
+					   $('#divRss').FeedEk({
+    				    FeedUrl : 'http://www.welt.de/?service=Rss',
+    				    MaxCount : 10,
+                        ShowPubDate: false,
+                        ShowDesc: false});
+                    </script>
+                    </div>
+			</div>
+        </div>
+	</body>
+</html>
+    
+                   <!--     <li style="display:inline; margin-right: -5px;"><a href="http://boards.4chan.org/g/catalog">/g/</a></li>
+                    
+                    <li style="display:inline; margin-right: -5px;"><a href="http://boards.4chan.org/wg/catalog">/wg/</a></li>    
+                    <li style="display:inline;"><a href="http://boards.4chan.org/sci/catalog">/sci/</a></li> -->

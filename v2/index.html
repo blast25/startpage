@@ -8,11 +8,12 @@
 		<script type="text/javascript" src="FeedEk.js"></script>
 	</head>
 	<body>
-			<div class="container">
-			<form method="get" action="http://www.google.com/search" target="_blank">
-          		<input type="text" name="q" placeholder="Something on your mind.."
-                    onhover="this.placeholder='Something on your mind..'"
-                    onfocus="this.placeholder = ''" onblur="this.placeholder='Something on your mind..'" class="search"></form>
+        <div class="container">
+            
+            <form method="get" action="http://www.google.com/search" target="_blank">
+            <input type="text" name="q" placeholder="Something on your mind.." onhover="this.placeholder='Something on your mind..'" onfocus="this.placeholder = ''" onblur="this.placeholder='Something on your mind..'" class="search">
+            </form>
+            
 			<div class="notlast_container">
 				<h2>university</h2>
 				<ul>
@@ -22,15 +23,13 @@
 					<li><a href="http://gen.lib.rus.ec/">libgen</a></li>
 				</ul>
 			</div>
+            
 			<div class="notlast_container">
 				<h2>general</h2>
 				<ul>
 					<li><a href="https://mail.google.com">gmail</a></li>
 					<li><a href="https://drive.google.com/drive/?ltmpl=drive&usp=gtd&utm_campaign=web&utm_content=gotodrive&utm_medium=button&utm_source=de#">drive</a></li>
-					<li><br><br\></li>
-					<li><br><br\></li>
 				</ul>
-
 			</div>
             
 			<div class="notlast_container">
@@ -43,6 +42,7 @@
                     <li><a href="https://bs.to/serie/Mr-Robot/2">bs.to</a></li>
                 </ul>
 			</div>
+
 			<div id="boards" class="notlast_container">
 				<h2>boards</h2>
 				<ul>
@@ -67,18 +67,18 @@
 				</ul>
 			</div>
                 
-            <div id="last_container">
+            <div id="last_container"><!--wrap rss container to achieve align to the right with dynamic positioning-->
                 <div id="rss">
 				    <h2>news</h2>
 				    <div id="divRss"></div>
-					   <script type="text/javascript">
-					   $('#divRss').FeedEk({
-    				    FeedUrl : 'http://www.welt.de/?service=Rss',
-    				    MaxCount : 10,
-                        ShowPubDate: false,
-                        ShowDesc: false});
+				    <script type="text/javascript">
+				    $('#divRss').FeedEk({
+    				FeedUrl : 'http://www.welt.de/?service=Rss',
+    				MaxCount : 10,
+                    ShowPubDate: false,
+                    ShowDesc: false});
                     </script>
-                    </div>
+                </div>
 			</div>
         </div>
 	</body>
